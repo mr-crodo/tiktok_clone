@@ -19,6 +19,7 @@ class InputTextWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextField(
       controller: textEditingController,
+      obscureText: isObscure,
       decoration: InputDecoration(
         labelText: labelString,
         prefixIcon: iconData != null
